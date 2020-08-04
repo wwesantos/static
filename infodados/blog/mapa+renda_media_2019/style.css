@@ -1,0 +1,31 @@
+.state_hover {
+  fill-opacity: 0.1;
+  font-size: larger;
+  fill: black;
+  stroke: lightblue;
+  stroke-width: 5px;
+}
+
+#d3js-brMap .state_contour {
+  fill: none;
+  stroke: lightblue;
+  stroke-linejoin: round;
+}
+
+.state_label {
+  text-anchor: middle;
+  font-size: 6pt;
+}
+
+.state_label_hover {
+  font-size: 12pt;
+}
+
+#d3js-brMap rect.map_canvas {
+  fill: lightblue;
+  opacity: 0.4;
+}
+
+#d3js-loading {
+  text-align: center;
+}

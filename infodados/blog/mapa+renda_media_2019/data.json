@@ -1,0 +1,90 @@
+{
+  "country_last_year_data": [{ "name": "Brasil", "value": 2464.0 }],
+  "regions_last_year_data": [
+    { "name": "Norte", "value": 1795.0 },
+    { "name": "Nordeste", "value": 1674.0 },
+    { "name": "Sudeste", "value": 2838.0 },
+    { "name": "Sul", "value": 2705.0 },
+    { "name": "Centro-Oeste", "value": 2670.0 }
+  ],
+  "states_last_year_data": [
+    {
+      "name": "Rond\u00f4nia",
+      "value": 2126.0,
+      "uf": "RO",
+      "color": "#fcbfa7"
+    },
+    { "name": "Acre", "value": 1999.0, "uf": "AC", "color": "#fdcbb6" },
+    { "name": "Amazonas", "value": 1835.0, "uf": "AM", "color": "#fedaca" },
+    { "name": "Roraima", "value": 2295.0, "uf": "RR", "color": "#fcae92" },
+    { "name": "Par\u00e1", "value": 1601.0, "uf": "PA", "color": "#fee9df" },
+    { "name": "Amap\u00e1", "value": 1952.0, "uf": "AP", "color": "#fdd0bc" },
+    { "name": "Tocantins", "value": 1969.0, "uf": "TO", "color": "#fdcebb" },
+    {
+      "name": "Maranh\u00e3o",
+      "value": 1379.0,
+      "uf": "MA",
+      "color": "#fff5f0"
+    },
+    { "name": "Piau\u00ed", "value": 1498.0, "uf": "PI", "color": "#ffefe8" },
+    { "name": "Cear\u00e1", "value": 1699.0, "uf": "CE", "color": "#fee5d8" },
+    {
+      "name": "Rio Grande do Norte",
+      "value": 1889.0,
+      "uf": "RN",
+      "color": "#fdd5c4"
+    },
+    { "name": "Para\u00edba", "value": 1730.0, "uf": "PB", "color": "#fee3d6" },
+    { "name": "Pernambuco", "value": 1829.0, "uf": "PE", "color": "#fedbcc" },
+    { "name": "Alagoas", "value": 1535.0, "uf": "AL", "color": "#ffede5" },
+    { "name": "Sergipe", "value": 1732.0, "uf": "SE", "color": "#fee3d6" },
+    { "name": "Bahia", "value": 1666.0, "uf": "BA", "color": "#fee6da" },
+    { "name": "Minas Gerais", "value": 2156.0, "uf": "MG", "color": "#fcbca2" },
+    {
+      "name": "Espirito Santo",
+      "value": 2393.0,
+      "uf": "ES",
+      "color": "#fca486"
+    },
+    {
+      "name": "Rio de Janeiro",
+      "value": 2996.0,
+      "uf": "RJ",
+      "color": "#fa6547"
+    },
+    {
+      "name": "S\u00e3o Paulo",
+      "value": 3116.0,
+      "uf": "SP",
+      "color": "#f6583e"
+    },
+    { "name": "Paran\u00e1", "value": 2668.0, "uf": "PR", "color": "#fc8767" },
+    {
+      "name": "Santa Catarina",
+      "value": 2697.0,
+      "uf": "SC",
+      "color": "#fc8565"
+    },
+    {
+      "name": "Rio Grande do Sul",
+      "value": 2747.0,
+      "uf": "RS",
+      "color": "#fc7f5f"
+    },
+    {
+      "name": "Mato Grosso do Sul",
+      "value": 2488.0,
+      "uf": "MS",
+      "color": "#fc997a"
+    },
+    { "name": "Mato Grosso", "value": 2398.0, "uf": "MT", "color": "#fca486" },
+    { "name": "Goi\u00e1s", "value": 2164.0, "uf": "GO", "color": "#fcbca2" },
+    {
+      "name": "Distrito Federal",
+      "value": 4333.0,
+      "uf": "DF",
+      "color": "#860811"
+    }
+  ],
+  "last_year": 2019
+}

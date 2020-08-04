@@ -1,0 +1,475 @@
+{
+  "years": [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+  "last_year": 2019,
+  "last_year_index": 7,
+  "country_data": [
+    {
+      "name": "Brasil",
+      "value": [
+        { "year": 2012, "value": 1529.0 },
+        { "year": 2013, "value": 1670.0 },
+        { "year": 2014, "value": 1835.0 },
+        { "year": 2015, "value": 1941.0 },
+        { "year": 2016, "value": 2176.0 },
+        { "year": 2017, "value": 2235.0 },
+        { "year": 2018, "value": 2391.0 },
+        { "year": 2019, "value": 2464.0 }
+      ]
+    }
+  ],
+  "regions_data": [
+    {
+      "name": "Norte",
+      "value": [
+        { "year": 2012, "value": 1262.0 },
+        { "year": 2013, "value": 1342.0 },
+        { "year": 2014, "value": 1435.0 },
+        { "year": 2015, "value": 1523.0 },
+        { "year": 2016, "value": 1616.0 },
+        { "year": 2017, "value": 1694.0 },
+        { "year": 2018, "value": 1848.0 },
+        { "year": 2019, "value": 1795.0 }
+      ]
+    },
+    {
+      "name": "Nordeste",
+      "value": [
+        { "year": 2012, "value": 1033.0 },
+        { "year": 2013, "value": 1148.0 },
+        { "year": 2014, "value": 1250.0 },
+        { "year": 2015, "value": 1332.0 },
+        { "year": 2016, "value": 1473.0 },
+        { "year": 2017, "value": 1569.0 },
+        { "year": 2018, "value": 1591.0 },
+        { "year": 2019, "value": 1674.0 }
+      ]
+    },
+    {
+      "name": "Sudeste",
+      "value": [
+        { "year": 2012, "value": 1727.0 },
+        { "year": 2013, "value": 1891.0 },
+        { "year": 2014, "value": 2109.0 },
+        { "year": 2015, "value": 2223.0 },
+        { "year": 2016, "value": 2533.0 },
+        { "year": 2017, "value": 2521.0 },
+        { "year": 2018, "value": 2754.0 },
+        { "year": 2019, "value": 2838.0 }
+      ]
+    },
+    {
+      "name": "Sul",
+      "value": [
+        { "year": 2012, "value": 1675.0 },
+        { "year": 2013, "value": 1819.0 },
+        { "year": 2014, "value": 1991.0 },
+        { "year": 2015, "value": 2121.0 },
+        { "year": 2016, "value": 2345.0 },
+        { "year": 2017, "value": 2454.0 },
+        { "year": 2018, "value": 2608.0 },
+        { "year": 2019, "value": 2705.0 }
+      ]
+    },
+    {
+      "name": "Centro-Oeste",
+      "value": [
+        { "year": 2012, "value": 1790.0 },
+        { "year": 2013, "value": 1907.0 },
+        { "year": 2014, "value": 2074.0 },
+        { "year": 2015, "value": 2199.0 },
+        { "year": 2016, "value": 2359.0 },
+        { "year": 2017, "value": 2539.0 },
+        { "year": 2018, "value": 2630.0 },
+        { "year": 2019, "value": 2670.0 }
+      ]
+    }
+  ],
+  "states_data": [
+    {
+      "name": "Rond\u00f4nia",
+      "value": [
+        { "year": 2012, "value": 1301.0 },
+        { "year": 2013, "value": 1396.0 },
+        { "year": 2014, "value": 1467.0 },
+        { "year": 2015, "value": 1644.0 },
+        { "year": 2016, "value": 1707.0 },
+        { "year": 2017, "value": 1812.0 },
+        { "year": 2018, "value": 2115.0 },
+        { "year": 2019, "value": 2126.0 }
+      ]
+    },
+    {
+      "name": "Acre",
+      "value": [
+        { "year": 2012, "value": 1417.0 },
+        { "year": 2013, "value": 1399.0 },
+        { "year": 2014, "value": 1498.0 },
+        { "year": 2015, "value": 1683.0 },
+        { "year": 2016, "value": 1741.0 },
+        { "year": 2017, "value": 1747.0 },
+        { "year": 2018, "value": 1932.0 },
+        { "year": 2019, "value": 1999.0 }
+      ]
+    },
+    {
+      "name": "Amazonas",
+      "value": [
+        { "year": 2012, "value": 1430.0 },
+        { "year": 2013, "value": 1501.0 },
+        { "year": 2014, "value": 1580.0 },
+        { "year": 2015, "value": 1658.0 },
+        { "year": 2016, "value": 1663.0 },
+        { "year": 2017, "value": 1930.0 },
+        { "year": 2018, "value": 1653.0 },
+        { "year": 2019, "value": 1835.0 }
+      ]
+    },
+    {
+      "name": "Roraima",
+      "value": [
+        { "year": 2012, "value": 1667.0 },
+        { "year": 2013, "value": 1794.0 },
+        { "year": 2014, "value": 1739.0 },
+        { "year": 2015, "value": 2036.0 },
+        { "year": 2016, "value": 2189.0 },
+        { "year": 2017, "value": 2137.0 },
+        { "year": 2018, "value": 2475.0 },
+        { "year": 2019, "value": 2295.0 }
+      ]
+    },
+    {
+      "name": "Par\u00e1",
+      "value": [
+        { "year": 2012, "value": 1138.0 },
+        { "year": 2013, "value": 1203.0 },
+        { "year": 2014, "value": 1292.0 },
+        { "year": 2015, "value": 1333.0 },
+        { "year": 2016, "value": 1473.0 },
+        { "year": 2017, "value": 1471.0 },
+        { "year": 2018, "value": 1776.0 },
+        { "year": 2019, "value": 1601.0 }
+      ]
+    },
+    {
+      "name": "Amap\u00e1",
+      "value": [
+        { "year": 2012, "value": 1348.0 },
+        { "year": 2013, "value": 1583.0 },
+        { "year": 2014, "value": 1726.0 },
+        { "year": 2015, "value": 1879.0 },
+        { "year": 2016, "value": 2042.0 },
+        { "year": 2017, "value": 2213.0 },
+        { "year": 2018, "value": 1997.0 },
+        { "year": 2019, "value": 1952.0 }
+      ]
+    },
+    {
+      "name": "Tocantins",
+      "value": [
+        { "year": 2012, "value": 1254.0 },
+        { "year": 2013, "value": 1334.0 },
+        { "year": 2014, "value": 1516.0 },
+        { "year": 2015, "value": 1657.0 },
+        { "year": 2016, "value": 1688.0 },
+        { "year": 2017, "value": 1753.0 },
+        { "year": 2018, "value": 2016.0 },
+        { "year": 2019, "value": 1969.0 }
+      ]
+    },
+    {
+      "name": "Maranh\u00e3o",
+      "value": [
+        { "year": 2012, "value": 813.0 },
+        { "year": 2013, "value": 901.0 },
+        { "year": 2014, "value": 927.0 },
+        { "year": 2015, "value": 1021.0 },
+        { "year": 2016, "value": 1206.0 },
+        { "year": 2017, "value": 1283.0 },
+        { "year": 2018, "value": 1350.0 },
+        { "year": 2019, "value": 1379.0 }
+      ]
+    },
+    {
+      "name": "Piau\u00ed",
+      "value": [
+        { "year": 2012, "value": 875.0 },
+        { "year": 2013, "value": 1158.0 },
+        { "year": 2014, "value": 1162.0 },
+        { "year": 2015, "value": 1302.0 },
+        { "year": 2016, "value": 1430.0 },
+        { "year": 2017, "value": 1419.0 },
+        { "year": 2018, "value": 1593.0 },
+        { "year": 2019, "value": 1498.0 }
+      ]
+    },
+    {
+      "name": "Cear\u00e1",
+      "value": [
+        { "year": 2012, "value": 1008.0 },
+        { "year": 2013, "value": 1090.0 },
+        { "year": 2014, "value": 1126.0 },
+        { "year": 2015, "value": 1274.0 },
+        { "year": 2016, "value": 1402.0 },
+        { "year": 2017, "value": 1553.0 },
+        { "year": 2018, "value": 1541.0 },
+        { "year": 2019, "value": 1699.0 }
+      ]
+    },
+    {
+      "name": "Rio Grande do Norte",
+      "value": [
+        { "year": 2012, "value": 1041.0 },
+        { "year": 2013, "value": 1174.0 },
+        { "year": 2014, "value": 1294.0 },
+        { "year": 2015, "value": 1481.0 },
+        { "year": 2016, "value": 1709.0 },
+        { "year": 2017, "value": 1563.0 },
+        { "year": 2018, "value": 1795.0 },
+        { "year": 2019, "value": 1889.0 }
+      ]
+    },
+    {
+      "name": "Para\u00edba",
+      "value": [
+        { "year": 2012, "value": 947.0 },
+        { "year": 2013, "value": 1040.0 },
+        { "year": 2014, "value": 1226.0 },
+        { "year": 2015, "value": 1385.0 },
+        { "year": 2016, "value": 1466.0 },
+        { "year": 2017, "value": 1719.0 },
+        { "year": 2018, "value": 1659.0 },
+        { "year": 2019, "value": 1730.0 }
+      ]
+    },
+    {
+      "name": "Pernambuco",
+      "value": [
+        { "year": 2012, "value": 1248.0 },
+        { "year": 2013, "value": 1431.0 },
+        { "year": 2014, "value": 1589.0 },
+        { "year": 2015, "value": 1560.0 },
+        { "year": 2016, "value": 1751.0 },
+        { "year": 2017, "value": 1660.0 },
+        { "year": 2018, "value": 1672.0 },
+        { "year": 2019, "value": 1829.0 }
+      ]
+    },
+    {
+      "name": "Alagoas",
+      "value": [
+        { "year": 2012, "value": 958.0 },
+        { "year": 2013, "value": 1031.0 },
+        { "year": 2014, "value": 1246.0 },
+        { "year": 2015, "value": 1240.0 },
+        { "year": 2016, "value": 1358.0 },
+        { "year": 2017, "value": 1373.0 },
+        { "year": 2018, "value": 1576.0 },
+        { "year": 2019, "value": 1535.0 }
+      ]
+    },
+    {
+      "name": "Sergipe",
+      "value": [
+        { "year": 2012, "value": 1201.0 },
+        { "year": 2013, "value": 1284.0 },
+        { "year": 2014, "value": 1391.0 },
+        { "year": 2015, "value": 1455.0 },
+        { "year": 2016, "value": 1696.0 },
+        { "year": 2017, "value": 1605.0 },
+        { "year": 2018, "value": 1814.0 },
+        { "year": 2019, "value": 1732.0 }
+      ]
+    },
+    {
+      "name": "Bahia",
+      "value": [
+        { "year": 2012, "value": 1052.0 },
+        { "year": 2013, "value": 1134.0 },
+        { "year": 2014, "value": 1240.0 },
+        { "year": 2015, "value": 1310.0 },
+        { "year": 2016, "value": 1402.0 },
+        { "year": 2017, "value": 1660.0 },
+        { "year": 2018, "value": 1568.0 },
+        { "year": 2019, "value": 1666.0 }
+      ]
+    },
+    {
+      "name": "Minas Gerais",
+      "value": [
+        { "year": 2012, "value": 1396.0 },
+        { "year": 2013, "value": 1519.0 },
+        { "year": 2014, "value": 1703.0 },
+        { "year": 2015, "value": 1810.0 },
+        { "year": 2016, "value": 1920.0 },
+        { "year": 2017, "value": 1969.0 },
+        { "year": 2018, "value": 2105.0 },
+        { "year": 2019, "value": 2156.0 }
+      ]
+    },
+    {
+      "name": "Espirito Santo",
+      "value": [
+        { "year": 2012, "value": 1413.0 },
+        { "year": 2013, "value": 1605.0 },
+        { "year": 2014, "value": 1773.0 },
+        { "year": 2015, "value": 1895.0 },
+        { "year": 2016, "value": 1985.0 },
+        { "year": 2017, "value": 2109.0 },
+        { "year": 2018, "value": 2179.0 },
+        { "year": 2019, "value": 2393.0 }
+      ]
+    },
+    {
+      "name": "Rio de Janeiro",
+      "value": [
+        { "year": 2012, "value": 1635.0 },
+        { "year": 2013, "value": 1764.0 },
+        { "year": 2014, "value": 1967.0 },
+        { "year": 2015, "value": 2109.0 },
+        { "year": 2016, "value": 2413.0 },
+        { "year": 2017, "value": 2347.0 },
+        { "year": 2018, "value": 2753.0 },
+        { "year": 2019, "value": 2996.0 }
+      ]
+    },
+    {
+      "name": "S\u00e3o Paulo",
+      "value": [
+        { "year": 2012, "value": 1935.0 },
+        { "year": 2013, "value": 2124.0 },
+        { "year": 2014, "value": 2364.0 },
+        { "year": 2015, "value": 2477.0 },
+        { "year": 2016, "value": 2880.0 },
+        { "year": 2017, "value": 2854.0 },
+        { "year": 2018, "value": 3080.0 },
+        { "year": 2019, "value": 3116.0 }
+      ]
+    },
+    {
+      "name": "Paran\u00e1",
+      "value": [
+        { "year": 2012, "value": 1650.0 },
+        { "year": 2013, "value": 1831.0 },
+        { "year": 2014, "value": 2003.0 },
+        { "year": 2015, "value": 2051.0 },
+        { "year": 2016, "value": 2304.0 },
+        { "year": 2017, "value": 2437.0 },
+        { "year": 2018, "value": 2584.0 },
+        { "year": 2019, "value": 2668.0 }
+      ]
+    },
+    {
+      "name": "Santa Catarina",
+      "value": [
+        { "year": 2012, "value": 1672.0 },
+        { "year": 2013, "value": 1805.0 },
+        { "year": 2014, "value": 1923.0 },
+        { "year": 2015, "value": 2107.0 },
+        { "year": 2016, "value": 2285.0 },
+        { "year": 2017, "value": 2424.0 },
+        { "year": 2018, "value": 2552.0 },
+        { "year": 2019, "value": 2697.0 }
+      ]
+    },
+    {
+      "name": "Rio Grande do Sul",
+      "value": [
+        { "year": 2012, "value": 1703.0 },
+        { "year": 2013, "value": 1816.0 },
+        { "year": 2014, "value": 2022.0 },
+        { "year": 2015, "value": 2198.0 },
+        { "year": 2016, "value": 2424.0 },
+        { "year": 2017, "value": 2491.0 },
+        { "year": 2018, "value": 2671.0 },
+        { "year": 2019, "value": 2747.0 }
+      ]
+    },
+    {
+      "name": "Mato Grosso do Sul",
+      "value": [
+        { "year": 2012, "value": 1540.0 },
+        { "year": 2013, "value": 1613.0 },
+        { "year": 2014, "value": 1795.0 },
+        { "year": 2015, "value": 1803.0 },
+        { "year": 2016, "value": 2155.0 },
+        { "year": 2017, "value": 2228.0 },
+        { "year": 2018, "value": 2384.0 },
+        { "year": 2019, "value": 2488.0 }
+      ]
+    },
+    {
+      "name": "Mato Grosso",
+      "value": [
+        { "year": 2012, "value": 1579.0 },
+        { "year": 2013, "value": 1672.0 },
+        { "year": 2014, "value": 1851.0 },
+        { "year": 2015, "value": 1841.0 },
+        { "year": 2016, "value": 2059.0 },
+        { "year": 2017, "value": 2181.0 },
+        { "year": 2018, "value": 2429.0 },
+        { "year": 2019, "value": 2398.0 }
+      ]
+    },
+    {
+      "name": "Goi\u00e1s",
+      "value": [
+        { "year": 2012, "value": 1480.0 },
+        { "year": 2013, "value": 1575.0 },
+        { "year": 2014, "value": 1737.0 },
+        { "year": 2015, "value": 1859.0 },
+        { "year": 2016, "value": 1963.0 },
+        { "year": 2017, "value": 2142.0 },
+        { "year": 2018, "value": 2218.0 },
+        { "year": 2019, "value": 2164.0 }
+      ]
+    },
+    {
+      "name": "Distrito Federal",
+      "value": [
+        { "year": 2012, "value": 2953.0 },
+        { "year": 2013, "value": 3165.0 },
+        { "year": 2014, "value": 3373.0 },
+        { "year": 2015, "value": 3717.0 },
+        { "year": 2016, "value": 3761.0 },
+        { "year": 2017, "value": 4112.0 },
+        { "year": 2018, "value": 4034.0 },
+        { "year": 2019, "value": 4333.0 }
+      ]
+    }
+  ],
+  "color_map": {
+    "Brasil": "#17becf",
+    "Norte": "#bcbd22",
+    "Nordeste": "#7f7f7f",
+    "Sudeste": "#e377c2",
+    "Sul": "#8c564b",
+    "Centro-Oeste": "#9467bd",
+    "Rondônia": "#d62728",
+    "Acre": "#2ca02c",
+    "Amazonas": "#ff7f0e",
+    "Roraima": "#1f77b4",
+    "Pará": "#17becf",
+    "Amapá": "#bcbd22",
+    "Tocantins": "#7f7f7f",
+    "Maranhão": "#e377c2",
+    "Piauí": "#8c564b",
+    "Ceará": "#9467bd",
+    "Rio Grande do Norte": "#d62728",
+    "Paraíba": "#2ca02c",
+    "Pernambuco": "#ff7f0e",
+    "Alagoas": "#1f77b4",
+    "Sergipe": "#17becf",
+    "Bahia": "#bcbd22",
+    "Minas Gerais": "#7f7f7f",
+    "Espirito Santo": "#e377c2",
+    "Rio de Janeiro": "#8c564b",
+    "S\u00e3o Paulo": "#9467bd",
+    "Paraná": "#d62728",
+    "Santa Catarina": "#2ca02c",
+    "Rio Grande do Sul": "#ff7f0e",
+    "Mato Grosso do Sul": "#1f77b4",
+    "Mato Grosso": "#17becf",
+    "Goiás": "#bcbd22",
+    "Distrito Federal": "#7f7f7f"
+  }
+}

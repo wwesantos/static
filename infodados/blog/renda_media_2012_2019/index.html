@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="d3js-loading" width="100%">
+      <img src="oval.svg" alt="Carregando dados..." />
+    </div>
+    <div id="d3js-container">
+      <div id="d3js-plt-content"></div>
+      <div id="d3js-controls">
+        <div id="d3js-countries" class="d3js-control-items">
+          País
+          <div id="d3js-country-items" class="d3js-items">
+            <div
+              id="d3js-countries-col-0"
+              class="d3js-item-col d3js-item-col-country"
+            ></div>
+          </div>
+        </div>
+        <div id="d3js-regions" class="d3js-control-items">
+          Regiões
+          <button id="allRegions" title="Selectionar todas as regiões">
+            T
+          </button>
+          <button id="noRegions" title="Remover seleção das regiões">
+            N
+          </button>
+          <div id="d3js-region-items" class="d3js-items">
+            <div
+              id="d3js-regions-col-0"
+              class="d3js-item-col d3js-item-col-region"
+            ></div>
+          </div>
+        </div>
+        <div id="d3js-states" class="d3js-control-items">
+          Estados
+          <button id="allStates" title="Selectionar todas os eatados">
+            T
+          </button>
+          <button id="noStates" title="Remover seleção dos estados">
+            N
+          </button>
+          <div id="d3js-state-items" class="d3js-items">
+            <div
+              id="d3js-states-col-0"
+              class="d3js-item-col d3js-item-col-state"
+            ></div>
+            <div
+              id="d3js-states-col-1"
+              class="d3js-item-col d3js-item-col-state"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        loadYearsData();
+      });
+    </script>
+  </body>
+</html>
