@@ -155,9 +155,13 @@ function loadMapInformation() {
   path = d3.geoPath().projection(projection);
 
   /* States geo data from https://bl.ocks.org/ppKrauss/0c33364240e841fa23e78b21005f792c*/
-  d3.json('./br-states.json').then(function (geoStateData) {
+  d3.json(
+    'https://wwesantos.github.io/static/infodados/blog/mapa_renda_media_2019/br-states.min.json'
+  ).then(function (geoStateData) {
     geo_state_data = geoStateData;
-    d3.json('./data.json').then(function (ibgeData) {
+    d3.json(
+      'https://wwesantos.github.io/static/infodados/blog/mapa_renda_media_2019/data.min.json'
+    ).then(function (ibgeData) {
       processData(geoStateData, ibgeData);
       showCanvas();
     });
