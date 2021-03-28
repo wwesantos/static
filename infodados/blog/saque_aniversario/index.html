@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saque Aniversário do FGTS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container" id="form-inputs">
+        <div class="row">
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">R$</span>
+              </div>
+              <input
+                id="brl"
+                type="number"
+                min="0"
+                step="1"
+                class="form-control"
+                aria-label="Insira seu saldo no FGTS (em R$)"
+                placeholder="Insira seu saldo no FGTS (em R$)"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Disponível</span>
+              </div>
+              <input
+                id="disponivel"
+                class="form-control"
+                type="text"
+                placeholder="Valor disponível para saque (em R$)"
+                readonly
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://wwesantos.github.io/static/infodados/blog/saque_aniversario/script.min.js"></script>
+    </main>
+  </body>
+</html>
