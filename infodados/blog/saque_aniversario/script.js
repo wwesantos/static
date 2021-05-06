@@ -38,7 +38,7 @@ get('#form-inputs').addEventListener('focusin', function (e) {
 get('#form-inputs').addEventListener('input', function (e) {
   var value = brl.value + '';
   if (e.target.id == 'brl') {
-    var brlInput = Number(value);
+    var brlInput = Number(value.replaceAll('.', '').replaceAll(',', '.'));
     var tier = getTier(brlInput);
     var varlorDisponivel = tier[1] * brlInput + tier[2];
     disponivel.value =
