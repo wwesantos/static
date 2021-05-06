@@ -37,23 +37,8 @@ get('#form-inputs').addEventListener('focusin', function (e) {
 
 get('#form-inputs').addEventListener('input', function (e) {
   var value = brl.value + '';
-  if (value.length > 0) {
-    var c = value.charAt(value.length - 1);
-    if (c != '.' && c != ',' && isNaN(c)) {
-      value = value.substring(0, value.length - 1);
-      brl.value = value;
-    }
-  }
-  if (value.length > 1) {
-    var c1 = value.charAt(value.length - 1);
-    var c2 = value.charAt(value.length - 2);
-    if ((c1 == ',' || c1 == '.') && (c2 == ',' || c2 == '.')) {
-      value = value.substring(0, value.length - 1);
-      brl.value = value;
-    }
-  }
   if (e.target.id == 'brl') {
-    var brlInput = Number(value.replaceAll('.', '').replaceAll(',', '.'));
+    var brlInput = Number(value);
     var tier = getTier(brlInput);
     var varlorDisponivel = tier[1] * brlInput + tier[2];
     disponivel.value =
