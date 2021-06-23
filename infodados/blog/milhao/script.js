@@ -4,7 +4,7 @@ const get = function (query) {
 
 // set the dimensions and margins of the graph
 const margin = { top: 30, right: 20, bottom: 90, left: 70 },
-  width = 460 - margin.left - margin.right,
+  width = 400 - margin.left - margin.right,
   height = 450 - margin.top - margin.bottom;
 
 const initialValue = get('#valor-inicial');
