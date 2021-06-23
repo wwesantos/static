@@ -3,7 +3,7 @@ const get = function (query) {
 };
 
 // set the dimensions and margins of the graph
-const margin = { top: 30, right: 30, bottom: 90, left: 60 },
+const margin = { top: 30, right: 30, bottom: 90, left: 30 },
   width = 460 - margin.left - margin.right,
   height = 400 - margin.top - margin.bottom;
 
