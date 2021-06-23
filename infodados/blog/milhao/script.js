@@ -52,8 +52,6 @@ const addRows = function (data) {
       '</td><td>' +
       element.fortatedDate +
       '</td><td>' +
-      element.fortatedDate +
-      '</td><td>' +
       element.formatedValue +
       '</td>';
     evolution.appendChild(tr);
