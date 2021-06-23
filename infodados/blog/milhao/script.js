@@ -3,7 +3,7 @@ const get = function (query) {
 };
 
 // set the dimensions and margins of the graph
-const margin = { top: 30, right: 30, bottom: 70, left: 60 },
+const margin = { top: 30, right: 30, bottom: 90, left: 60 },
   width = 460 - margin.left - margin.right,
   height = 400 - margin.top - margin.bottom;
 
@@ -20,11 +20,38 @@ const MILLION = 1_000_000;
 const dateOptions = { year: 'numeric', month: 'long' };
 const currencyOptions = { style: 'currency', currency: 'BRL' };
 
+const getTime = function (totalMonths) {
+  const years = Math.trunc(totalMonths / 12);
+  const months = totalMonths % 12;
+  let time = months > 0 ? '' : ' Inicial ';
+
+  if (years == 1) {
+    time = years + ' ano ';
+  } else if (years > 1) {
+    time = years + ' anos ';
+  }
+
+  if (years > 0 && months > 0) {
+    time += 'e ';
+  }
+
+  if (months == 1) {
+    time += months + ' mês ';
+  } else if (months > 1) {
+    time += months + ' meses ';
+  }
+  return time;
+};
+
 const addRows = function (data) {
   data.forEach(function (element) {
-    var tr = document.createElement('tr');
+    let tr = document.createElement('tr');
     tr.innerHTML =
       '<td>' +
+      getTime(element.month) +
+      '</td><td>' +
+      element.fortatedDate +
+      '</td><td>' +
       element.fortatedDate +
       '</td><td>' +
       element.formatedValue +
@@ -49,7 +76,7 @@ const plotBars = function (data) {
     .range([0, width])
     .domain(
       data.map(function (d) {
-        return d.fortatedDate;
+        return getTime(d.month);
       })
     )
     .padding(0.2);
@@ -72,7 +99,7 @@ const plotBars = function (data) {
     .enter()
     .append('rect')
     .attr('x', function (d) {
-      return x(d.fortatedDate);
+      return x(getTime(d.month));
     })
     .attr('y', function (d) {
       return y(d.value);
@@ -119,8 +146,8 @@ get('#form-inputs').addEventListener('input', function (e) {
       result = result * monthlyIncrement + monthly;
     }
 
-    if (count > 12) {
-      let step = Math.trunc(count / 10);
+    if (count > 0) {
+      let step = count > 10 ? Math.trunc(count / 10) : 1;
       let currentValue = initial;
       let i = 0;
       const data = [];
@@ -141,6 +168,7 @@ get('#form-inputs').addEventListener('input', function (e) {
             fortatedDate: nexDate,
             formatedValue: nexValue,
             value: currentValue,
+            month: i,
           });
         }
 
