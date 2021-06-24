@@ -15,6 +15,15 @@ const MILLION = 1_000_000;
 const dateOptions = { year: 'numeric', month: 'long' };
 const currencyOptions = { style: 'currency', currency: 'BRL' };
 
+//https://cdn.jsdelivr.net/npm/d3-format@1/locale/pt-BR.json
+const locale = d3.formatLocale({
+  decimal: ',',
+  thousands: '.',
+  grouping: [3],
+  currency: ['R$', ' '],
+});
+const fformat = locale.format('$,');
+
 const getTime = function (totalMonths) {
   const years = Math.trunc(totalMonths / 12);
   const months = totalMonths % 12;
@@ -60,21 +69,12 @@ const plotBars = function (data) {
   //var x = d3.scaleTime().range([0, width]);
   const clientWidth = Math.min(
     document.getElementById('d3-js-container').clientWidth,
-    600
+    650
   );
 
   const margin = { top: 30, right: 20, bottom: 90, left: 85 },
     width = clientWidth - margin.left - margin.right,
     height = clientWidth - margin.top - margin.bottom - 0.2 * clientWidth;
-
-  //https://cdn.jsdelivr.net/npm/d3-format@1/locale/pt-BR.json
-  const locale = d3.formatLocale({
-    decimal: ',',
-    thousands: '.',
-    grouping: [3],
-    currency: ['R$', ' '],
-  });
-  const fformat = locale.format('$,');
 
   // append the svg object to the body of the page
   var svg = d3
