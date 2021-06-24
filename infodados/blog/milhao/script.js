@@ -209,8 +209,6 @@ get('#form-inputs').addEventListener('input', function (e) {
     const today = new Date();
 
     const next = new Date(today.setMonth(today.getMonth() + count));
-    milhao.value =
-      'Você atingirá R$ 1 milhão em ' +
-      new Intl.DateTimeFormat('pt-BR', dateOptions).format(next);
+    milhao.value = new Intl.DateTimeFormat('pt-BR', dateOptions).format(next);
   }
 });
