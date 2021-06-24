@@ -6,6 +6,10 @@
     <title>Calculadora do Milhão</title>
     <link
       rel="stylesheet"
+      href="https://wwesantos.github.io/static/infodados/blog/milhao/style.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
@@ -33,8 +37,8 @@
                 lang="pt-BR"
                 pattern="[0-9]*"
                 class="form-control"
-                aria-label="Valor Inicial (em R$)"
-                placeholder="Valor Inicial (em R$)"
+                aria-label="Aporte Inicial (em R$)"
+                placeholder="Aporte Inicial (em R$)"
               />
             </div>
             <div class="input-group mb-3">
@@ -91,7 +95,7 @@
               <br />
               <h5>Evolução do patrimônio</h5>
             </div>
-            <div class="row">
+            <div class="row" id="d3-js-container">
               <div id="dataviz"></div>
             </div>
             <table class="table table-striped">
@@ -108,7 +112,8 @@
         </div>
       </div>
       <script src="https://d3js.org/d3.v4.js"></script>
-      <script src="https://wwesantos.github.io/static/infodados/blog/milhao/script.js"></script>
+      <!--script src="https://wwesantos.github.io/static/infodados/blog/milhao/script.js"></script-->
+      <script src="script.js"></script>
     </main>
   </body>
 </html>

@@ -2,11 +2,6 @@ const get = function (query) {
   return document.querySelector(query);
 };
 
-// set the dimensions and margins of the graph
-const margin = { top: 30, right: 20, bottom: 90, left: 70 },
-  width = 400 - margin.left - margin.right,
-  height = 450 - margin.top - margin.bottom;
-
 const initialValue = get('#valor-inicial');
 const monthlyValue = get('#valor-mensal');
 const milhao = get('#milhao');
@@ -59,6 +54,28 @@ const addRows = function (data) {
 };
 
 const plotBars = function (data) {
+  // set the dimensions and margins of the graph
+
+  // set the ranges
+  //var x = d3.scaleTime().range([0, width]);
+  const clientWidth = Math.min(
+    document.getElementById('d3-js-container').clientWidth,
+    600
+  );
+
+  const margin = { top: 30, right: 20, bottom: 90, left: 85 },
+    width = clientWidth - margin.left - margin.right,
+    height = clientWidth - margin.top - margin.bottom - 0.2 * clientWidth;
+
+  //https://cdn.jsdelivr.net/npm/d3-format@1/locale/pt-BR.json
+  const locale = d3.formatLocale({
+    decimal: ',',
+    thousands: '.',
+    grouping: [3],
+    currency: ['R$', ' '],
+  });
+  const fformat = locale.format('$,');
+
   // append the svg object to the body of the page
   var svg = d3
     .select('#dataviz')
@@ -78,6 +95,7 @@ const plotBars = function (data) {
       })
     )
     .padding(0.2);
+
   svg
     .append('g')
     .attr('transform', 'translate(0,' + height + ')')
@@ -88,7 +106,18 @@ const plotBars = function (data) {
 
   // Add Y axis
   var y = d3.scaleLinear().domain([0, MILLION]).range([height, 0]);
-  svg.append('g').call(d3.axisLeft(y));
+
+  // add the Y gridlines
+  svg
+    .append('g')
+    .attr('class', 'd3js-grid')
+    .call(d3.axisLeft(y).ticks(5).tickSize(-width).tickFormat(''));
+
+  svg.append('g').call(
+    d3.axisLeft(y).tickFormat(function (d) {
+      return fformat(d);
+    })
+  );
 
   // Bars
   svg
