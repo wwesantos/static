@@ -19,13 +19,11 @@ const dateOptions = {
 };
 
 const usd = get("#usd");
-const brl = get("#brl");
 const btc = get("#btc");
 const mbtc = get("#mbtc");
 const ubtc = get("#ubtc");
 const satoshi = get("#satoshi");
 const btcToUsd = get("#btcToUsd");
-const btcToBrl = get("#btcToBrl");
 const lastUpdate = get("#lastUpdate");
 
 const load = get("#load");
@@ -33,7 +31,6 @@ const loading = get("#loading");
 
 const toggleFields = mode => {
   usd.readOnly = mode;
-  brl.readOnly = mode;
   btc.readOnly = mode;
   mbtc.readOnly = mode;
   ubtc.readOnly = mode;
@@ -53,7 +50,6 @@ const loadExchangeRate = () => {
     .then(data => {
       exchangeRate = data;
       btcToUsd.value = `$ ${data.btcToUsd.toFixed(2)}`;
-      btcToBrl.value = `R$ ${data.btcToBrl.toFixed(2)}`;
       lastUpdate.value = new Date().toLocaleDateString("en-US", dateOptions);
       toggleFields(READ_WRITE);
     })
@@ -73,7 +69,6 @@ load.addEventListener("click", e => {
 get("#form-inputs").addEventListener("focusin", e => {
   if (e.target.value == 0) {
     usd.value = "";
-    brl.value = "";
     btc.value = "";
     mbtc.value = "";
     ubtc.value = "";
@@ -82,9 +77,7 @@ get("#form-inputs").addEventListener("focusin", e => {
 });
 
 get("#form-inputs").addEventListener("input", e => {
-  if (e.target.id == "brl") {
-    baseValue = e.target.value / exchangeRate.btcToBrl;
-  } else if (e.target.id == "usd") {
+  if (e.target.id == "usd") {
     baseValue = e.target.value / exchangeRate.btcToUsd;
   } else if (e.target.id == "btc") {
     baseValue = e.target.value;
@@ -95,9 +88,7 @@ get("#form-inputs").addEventListener("input", e => {
   } else if (e.target.id == "satoshi") {
     baseValue = e.target.value / HUNDRED_MILLION;
   }
-  if (e.target.id != "brl") {
-    brl.value = new Number(baseValue * exchangeRate.btcToBrl).toFixed(2);
-  }
+  
   if (e.target.id != "usd") {
     usd.value = (baseValue * exchangeRate.btcToUsd).toFixed(2);
   }
